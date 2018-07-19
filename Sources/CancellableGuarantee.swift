@@ -176,15 +176,9 @@ public extension CancellableGuarantee where T: Sequence {
         return then(on: on, flags: flags) {
             when(fulfilled: $0.map(transform))
         }.recover { _ in
-            // Workaround for an apparent compiler bug -- "Cannot invoke 'valueCC' with an argument list of type '([V])'"
-            // return CancellableGuarantee.valueCC(cancelValue ?? [])
-            return valueCC(cancelValue ?? [])
+            return CancellableGuarantee<[V]>.valueCC(cancelValue ?? [])
         }
     }
-}
-
-fileprivate func valueCC<T>(_ value: T) -> CancellableGuarantee<T> {
-    return CancellableGuarantee.valueCC(value)
 }
 
 #if swift(>=3.1)
