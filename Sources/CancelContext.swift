@@ -1,4 +1,4 @@
-import Foundation
+import Dispatch
 #if !PMKCocoaPods
 import PromiseKit
 #endif

@@ -137,10 +137,10 @@
 			children = (
 				915C8BA620F8842D00223DD0 /* CancellableTask.swift */,
 				915C8BAD20F8842D00223DD0 /* CancelContext.swift */,
-				915C8BA920F8842D00223DD0 /* CancellableCatchable.swift */,
-				915C8BA720F8842D00223DD0 /* CancellableGuarantee.swift */,
 				915C8BB020F8842E00223DD0 /* CancellablePromise.swift */,
+				915C8BA720F8842D00223DD0 /* CancellableGuarantee.swift */,
 				915C8BAF20F8842E00223DD0 /* CancellableThenable.swift */,
+				915C8BA920F8842D00223DD0 /* CancellableCatchable.swift */,
 				915C8BE820F88A6E00223DD0 /* Features */,
 			);
 			path = Sources;

@@ -1,4 +1,5 @@
-import Foundation
+import class Foundation.Thread
+import Dispatch
 #if !PMKCocoaPods
 import PromiseKit
 #endif
