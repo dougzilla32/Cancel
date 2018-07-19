@@ -65,7 +65,7 @@ public class CancellableGuarantee<T>: CancellableThenable {
     
     /// - Parameter cancelValue: optional override value to use when cancelled
     /// - Returns: a `CancellableGuarantee` sealed with the provided value.
-    public class func valueCC(_ value: T, cancelValue: T? = nil) -> CancellableGuarantee<T> {
+    public static func valueCC(_ value: T, cancelValue: T? = nil) -> CancellableGuarantee<T> {
         return CancellableGuarantee(Guarantee.value(value), cancelValue: cancelValue)
     }
     
