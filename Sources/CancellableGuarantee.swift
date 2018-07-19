@@ -183,7 +183,7 @@ public extension CancellableGuarantee where T: Sequence {
     }
 }
 
-private func valueCC<T>(_ value: T) -> CancellableGuarantee<T> {
+fileprivate func valueCC<T>(_ value: T) -> CancellableGuarantee<T> {
     return CancellableGuarantee.valueCC(value)
 }
 
